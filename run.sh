@@ -1,6 +1,7 @@
 #!/bin/bash
 
-VERSION=6.0
+VERSION=$1
+echo $1 > Version.txt
 curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VERSION.zip >FtcRobotController-$VERSION.zip
 
 unzip FtcRobotController-$VERSION
