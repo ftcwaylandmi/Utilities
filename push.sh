@@ -2,7 +2,7 @@
 
 VERSION=`cat Version.txt`
 CURRHOMEPATH=`pwd`;
-cd FtcRobotController-$VERSION-$1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
+cd FtcRobotController-$VERSION-$1/$2
 echo "Enter Commit MSG: "
 read commitMSG
 git commit -a -m "$commitMSG"
