@@ -1,6 +1,9 @@
 # Utilities
-This is the Utilities Repo
+This is the Utilities Repo to allow for getting setup for development.
 
+
+## Getting the utilities.
+### Note you need to have git (https://git-scm.com/) and android studio (https://developer.android.com/studio/) installed to use this.
 To get the Utilities Repo 
 1. Open Up GitBash
 2. Type: git clone https://github.com/ftcwaylandmi/Utilities.git
@@ -9,6 +12,13 @@ To get the Utilities Repo
 
 You are all set up now.
 
+## Pull code from Github (this should be done everytime you start to work on your code)
+
+```
+./pull.sh
+```
+
+## Push your code: (Do this when you have completed your updates)
 Now How To Push Your Code
 To push up your Repo a,b,c,phones,and Utilities.
 1. For Pushing Repo A, Type: ./push.sh a 
