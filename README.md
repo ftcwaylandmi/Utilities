@@ -16,9 +16,9 @@ Type: ./pull.sh
 ## Push your code: (Do this when you have completed your updates)
 To push up your Repo a,b,c,phones,and Utilities.
 1. Type: cd Utilities/
-2.a For Pushing Repo A, Type: ./push.sh a 
-2.b For Pushing Repo B, Type: ./push.sh b 
-2.c For Pushing Repo C, Type: ./push.sh c 
-2.d For Pushing Repo Phones, Type: ./push.sh phones 
-3. For Pushing Repo Utilities, Type: ./pushUtil.sh  
+2. For Pushing Repo A, Type: ./push.sh a 
+3. For Pushing Repo B, Type: ./push.sh b 
+4. For Pushing Repo C, Type: ./push.sh c 
+5. For Pushing Repo Phones, Type: ./push.sh phones 
+6. For Pushing Repo Utilities, Type: ./pushUtil.sh  
 WARNING! (For pushing Utilities as a MENTOR so you don't push up wrong code and break it)
