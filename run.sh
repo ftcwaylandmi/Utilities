@@ -17,4 +17,5 @@ for i in a b c phones; do
 done
 cd
 cd Utilities/
+echo "Opening README.md File"
 start README.md
