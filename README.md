@@ -6,7 +6,7 @@ To get the Utilities Repo
 1. Open Up GitBash
 2. Type: git clone https://github.com/ftcwaylandmi/Utilities.git
 3. Type: cd Utilities/
-4. Type: ./pull.sh
+4. Type: ./run.sh 6.0
 
 # Pushing
 To Push Your Code
