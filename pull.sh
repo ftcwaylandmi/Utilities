@@ -3,7 +3,7 @@
 VERSION=`cat Version.txt`
 CURRHOMEPATH=`pwd`;
 git pull
-echo "Pulled Utilites Repo"
+echo "Pulled Utilities Repo"
 
 for i in a b c phones; do
 	cd
