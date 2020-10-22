@@ -18,8 +18,8 @@ To get the Utilities Repo
 
 
 ## Pull code from Github (this should be done everytime you start to work on your code)
-
-Type: ./pull.sh
+1. Type: cd Utilities/
+2. Type: ./pull.sh
 
 
 ## Push your code: (Do this when you have completed your updates)
