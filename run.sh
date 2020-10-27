@@ -19,9 +19,3 @@ cd
 cd Utilities/
 echo "Opening README.md File"
 start README.md
-cd
-cdC:\\Program\ Files/Android/Android\ Studio/bin/
-start studio64.exe
-echo "Opening Android Studio"
-cd
-cd Utilities/
