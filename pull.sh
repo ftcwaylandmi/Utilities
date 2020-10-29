@@ -12,3 +12,4 @@ for i in a b c phones; do
 	echo "Pulled $i Repo on Version:$VERSION"
 	cd $CURRHOMEPATH;
 done
+echo "Pull Complete"
