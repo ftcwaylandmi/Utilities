@@ -4,7 +4,8 @@ VERSION=$1
 echo $1 > Version.txt
 cd
 curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VERSION.zip >FtcRobotController-$VERSION.zip
-
+start https://github.com/ftcwaylandmi?tab=repositories
+echo "Opening ftcwaylandmi at github.com"
 unzip FtcRobotController-$VERSION
 CURRHOMEPATH=`pwd`;
 for i in a b c phones; do
