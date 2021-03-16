@@ -1,7 +1,8 @@
 #!/bin/bash
 
-VERSION=$1
-echo $1 > Version.txt
+echo "Enter Version: "
+read VERSION
+echo $VERSION > Version.txt
 cd
 curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VERSION.zip >FtcRobotController-$VERSION.zip
 start https://github.com/ftcwaylandmi?tab=repositories
@@ -20,3 +21,5 @@ cd
 cd Utilities/
 echo "Opening README.md File"
 start README.md
+ls
+
