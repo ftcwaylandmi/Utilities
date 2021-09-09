@@ -14,7 +14,7 @@ for i in a b c phones; do
 	cp -r FtcRobotController-$VERSION FtcRobotController-$VERSION-$i
 	cd FtcRobotController-$VERSION-$i/TeamCode/src/main/java/org/firstinspires/ftc/
 	rm -rf teamcode
-	git clone https://github.com/ftcwaylandmi/2020-$i.git teamcode
+	git clone https://github.com/ftcwaylandmi/2021-$i.git teamcode
 	cd $CURRHOMEPATH;
 done
 cd
