@@ -17,7 +17,7 @@ This is the Utilities Repo to allow for getting setup for development.
 
 ## Setup your laptop after you have Cloned Utilities
 
-1. Type: ./setup.shh ${Version} ${Year}; (You can leave Version and Year blank that is if you want code from old versions and years 
+1. Type: ./setup.sh
 
 ## Pull code from Github (this should be done everytime you start to work on your code)
 
