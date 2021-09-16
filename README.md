@@ -2,29 +2,36 @@
 
 This is the Utilities Repo to allow for getting setup for development.
 
+## Signup/loging with GitHub
+- You can signup or login with the ftcwaylandmi account
+- If you create an account or want to let me know so i can help you set it up
 
-## Getting the utilities.
+## Getting the utilities
 ### Note you need to have git (https://git-scm.com/) and android studio (https://developer.android.com/studio/) installed to use this.
-
-
-To get the Utilities Repo 
 
 1. Open Up GitBash
 
-2. Type: git clone https://github.com/ftcwaylandmi/Utilities.git
+2. Type: git clone https://github.com/ftcwaylandmi/Utilities.git Utilities/
 
 3. Type: cd Utilities/
-4. Type: ./run.sh 6.2
 
+## Setup your laptop after you have Cloned Utilities
+
+1. Type: ./setup.shh ${Version} ${Year}; (You can leave Version and Year blank that is if you want code from old versions and years 
 
 ## Pull code from Github (this should be done everytime you start to work on your code)
-1. Type: cd Utilities/
+
+1. Type: cd Utilities/ (If not in Utilities Dir)
+
 2. Type: ./pull.sh
 
+## Github Repo's
+
+1. Our Repo's are located at (https://github.com/ftcwaylandmi)
 
 ## Push your code: (Do this when you have completed your updates)
 
-To push up your Repo a,b,c,phones,and Utilities.
+To push up your Repo a, b, c, and Utilities.
 
 1. Type: cd Utilities/
 
@@ -34,8 +41,11 @@ To push up your Repo a,b,c,phones,and Utilities.
 
 4. For Pushing Repo C, Type: ./push.sh c 
 
-5. For Pushing Repo Phones, Type: ./push.sh phones 
+5. For Pushing Repo Utilities, Type: ./pushUtil.sh  
 
-6. For Pushing Repo Utilities, Type: ./pushUtil.sh  
+WARNING! (Don't push code up to Utilities unless you have a MENTOR/COACH permission; This is so you don't push up old or broken code and break it)
 
-WARNING! (For pushing Utilities as a MENTOR so you don't push up wrong code and break it)
+
+# Issues
+- 14/9/21
+	1. pull.sh, push.sh are still being rewriten for 2021
