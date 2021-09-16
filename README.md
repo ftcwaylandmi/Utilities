@@ -46,6 +46,6 @@ To push up your Repo a, b, c, and Utilities.
 WARNING! (Don't push code up to Utilities unless you have a MENTOR/COACH permission; This is so you don't push up old or broken code and break it)
 
 
-# Issues
-- 14/9/21
-	1. pull.sh, push.sh are still being rewriten for 2021
+# Changes to come
+- 16/9/21
+	1. For setup.sh I will make it so you can get code from previous years
