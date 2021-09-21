@@ -11,7 +11,7 @@ cd FtcRobotCode-`date +%Y`
 curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VERSIONTAG.zip >FtcRobotController-$VERSIONTAG.zip
 unzip FtcRobotController-$VERSIONTAG
 
-for i in a b c; do
+for i in A B C; do
 	cp -r FtcRobotController-$VERSIONTAG FtcRobotController-$VERSIONTAG-$i
 	cd FtcRobotController-$VERSIONTAG-$i/TeamCode/src/main/java/org/firstinspires/ftc/
 	rm -rf teamcode
