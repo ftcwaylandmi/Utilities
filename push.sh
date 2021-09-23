@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSIONTAG=6.2;
+VERSIONTAG=7.0;
 CURRHOMEPATH=`pwd`;
 cd
 cd FtcRobotCode-`date +%Y`
