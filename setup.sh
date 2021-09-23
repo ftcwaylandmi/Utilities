@@ -6,7 +6,7 @@ then
 	mkdir -p FtcRobotCode-`date +%Y`
 fi
 
-VERSIONTAG=6.2;
+VERSIONTAG=7.0;
 cd FtcRobotCode-`date +%Y`
 curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VERSIONTAG.zip >FtcRobotController-$VERSIONTAG.zip
 unzip FtcRobotController-$VERSIONTAG
