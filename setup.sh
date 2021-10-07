@@ -3,6 +3,7 @@
 cd
 if [ ! -d FtcRobotCode-`date +%Y` ]
 then
+	rm -rf FtcRobotCode-`date +%Y`
 	mkdir -p FtcRobotCode-`date +%Y`
 fi
 
