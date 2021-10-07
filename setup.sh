@@ -17,7 +17,7 @@ curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VER
 unzip FtcRobotController-$VERSION
 
 CURRHOMEPATH=`pwd`;
-for i in A B C; do
+for i in A B C D; do
 	cp -r FtcRobotController-$VERSION FtcRobotController-$VERSION-$i
 	cd FtcRobotController-$VERSION-$i/TeamCode/src/main/java/org/firstinspires/ftc/
 	rm -rf teamcode
