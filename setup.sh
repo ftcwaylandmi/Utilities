@@ -31,6 +31,6 @@ else
 	for v in A B C D; do
 		cd FtcRobotCode-$YEAR-$VERSION/FtcRobotController-$VERSION-$v/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
 		git pull
-		cd FtcRobotCode-$YEAR-$VERSION
+		cd $CURRHOMEPATH
 	done
 fi
