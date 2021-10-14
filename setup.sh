@@ -6,12 +6,12 @@ read YEAR
 echo "Version:"
 read VERSION
 
-cd /c/Users/MSRobotics12
+cd
 if [ ! -d FtcRobotCode-$YEAR-$VERSION ]
 then
 	mkdir -p FtcRobotCode-$YEAR-$VERSION
 
-	cd /c/Users/MSRobotics12/FtcRobotCode-$YEAR-$VERSION
+	cd FtcRobotCode-$YEAR-$VERSION
 	curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VERSION.zip >FtcRobotController-$VERSION.zip
 	unzip FtcRobotController-$VERSION
 
@@ -29,8 +29,8 @@ then
 else
 	echo "Files for Version:$VERSION, and Year:$YEAR have already been created. Attempting to pull down year and version from github"
 	for v in A B C D; do
-		cd /c/Users/MSRobotics12/FtcRobotCode-$YEAR-$VERSION/FtcRobotController-$VERSION-$v/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
+		cd FtcRobotCode-$YEAR-$VERSION/FtcRobotController-$VERSION-$v/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
 		git pull
-		cd /c/Users/MSRobotics12/FtcRobotCode-$YEAR-$VERSION
+		cd FtcRobotCode-$YEAR-$VERSION
 	done
 fi
