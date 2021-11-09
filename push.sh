@@ -7,10 +7,10 @@ cd FtcRobotCode-`date +%Y`
 echo "Enter your Repo: "
 read REPO
 
-cd ~/FtcRobotCode-`date +%Y`/FtcRobotController-$VERSIONTAG-$REPO/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
+cd ~/FtcRobotCode-`date +%Y`-$VERSIONTAG/FtcRobotController-$VERSIONTAG-$REPO/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
 
 echo "Commit Msg: "
 read commitMsg
 git commit -a -m "$commitMsg"
-git push origin master
+git push origin main
 cd $CURRHOMEPATH;
