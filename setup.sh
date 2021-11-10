@@ -28,7 +28,7 @@ then
 	rm -rf FtcRobotController-$VERSION.zip
 else
 	echo "Files for Version:$VERSION, and Year:$YEAR have already been created. Attempting to pull down year and version from github"
-	for v in A B C D; do
+	for v in S A B C D Vuf; do
 		cd FtcRobotCode-$YEAR-$VERSION/FtcRobotController-$VERSION-$v/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
 		git pull
 		cd $CURRHOMEPATH
