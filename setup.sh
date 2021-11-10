@@ -16,7 +16,7 @@ then
 	unzip FtcRobotController-$VERSION
 
 	CURRHOMEPATH=`pwd`;
-	for i in A B C D; do
+	for i in S A B C D Vuf; do
 		cp -r FtcRobotController-$VERSION FtcRobotController-$VERSION-$i
 		cd FtcRobotController-$VERSION-$i/TeamCode/src/main/java/org/firstinspires/ftc/
 		rm -rf teamcode
