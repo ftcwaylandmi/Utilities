@@ -3,7 +3,7 @@
 VERSIONTAG=7.0;
 CURRHOMEPATH=`pwd`;
 cd
-cd FtcRobotCode-`date +%Y`
+cd FtcRobotCode-`date +%Y`-$VERSIONTAG
 echo "Enter your Repo: "
 read REPO
 
