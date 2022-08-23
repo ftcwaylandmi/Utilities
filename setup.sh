@@ -6,6 +6,9 @@ read YEAR
 echo "Version:"
 read VERSION
 
+echo "Repository Name:"
+read REPONAME
+
 cd
 if [ ! -d FtcRobotCode-$YEAR-$VERSION ]
 then
@@ -15,22 +18,19 @@ then
 	curl -L https://github.com/FIRST-Tech-Challenge/FtcRobotController/archive/v$VERSION.zip >FtcRobotController-$VERSION.zip
 	unzip FtcRobotController-$VERSION
 
-	CURRHOMEPATH=`pwd`;
-	for i in S A B C D Vuf; do
-		cp -r FtcRobotController-$VERSION FtcRobotController-$VERSION-$i
-		cd FtcRobotController-$VERSION-$i/TeamCode/src/main/java/org/firstinspires/ftc/
-		rm -rf teamcode
-		git clone https://github.com/ftcwaylandmi/$YEAR-$i.git teamcode
-		cd $CURRHOMEPATH;
-	done
+	cp -r FtcRobotController-$VERSION FtcRobotController-$REPONAME
+	cd FtcRobotController-$REPONAME/TeamCode/src/main/java/org/firstinspires/ftc/
+	rm -rf teamcode
+	git clone https://github.com/ftcwaylandmi/$REPONAME.git teamcode
+
+
 
 	rm -rf FtcRobotController-$VERSION
 	rm -rf FtcRobotController-$VERSION.zip
 else
-	echo "Files for Version:$VERSION, and Year:$YEAR have already been created. Attempting to pull down year and version from github"
-	for v in S A B C D Vuf; do
-		cd FtcRobotCode-$YEAR-$VERSION/FtcRobotController-$VERSION-$v/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
-		git pull
-		cd $CURRHOMEPATH
-	done
+	echo "Repository for this version has already been created. Attempting to pull down year and version from github"
+
+	cd FtcRobotCode-$YEAR-$VERSION/FtcRobotController-$REPONAME/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
+	git pull
+	cd $CURRHOMEPATH
 fi
