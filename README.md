@@ -17,7 +17,7 @@ This is the Utilities Repo to allow for getting setup for development.
 
 ## Setup your laptop after you have Cloned Utilities
 
-1. Type: ./setup.sh
+1. Type: ./s.sh {Year} {Version} {Repo}
 
 ## Pull code from Github (this should be done everytime you start to work on your code)
 
