@@ -1,16 +1,26 @@
 #!/bin/bash
 
-VERSIONTAG=7.0;
-CURRHOMEPATH=`pwd`;
+VERSIONTAG=8.0;
+
+UTIL="-u"
+REPO="-r"
+
+# if [ -z $1]
+if [ $1 == $UTIL ] 
+then
+	echo "Pushing Utilities"
+	git commit -a -m "Utilities Pushed: `date +%m-%d-%Y-%M`"
+    git push origin main
+fi
+if [ $1 == $REPO ]
+then
 cd
-cd FtcRobotCode-`date +%Y`-$VERSIONTAG
-echo "Enter your Repo: "
-read REPO
 
-cd ~/FtcRobotCode-`date +%Y`-$VERSIONTAG/FtcRobotController-$VERSIONTAG-$REPO/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
+cd ~/FtcRobotCode-`date +%Y`-$VERSIONTAG/FtcRobotController-$VERSIONTAG-$2/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
 
-echo "Commit Msg: "
 read commitMsg
 git commit -a -m "$commitMsg"
 git push origin main
-cd $CURRHOMEPATH;
+
+echo "Pushing Repo $2"
+fi
