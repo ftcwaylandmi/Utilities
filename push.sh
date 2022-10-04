@@ -5,7 +5,6 @@ VERSIONTAG=8.0;
 UTIL="-u"
 REPO="-r"
 
-# if [ -z $1]
 if [ $1 == $UTIL ] 
 then
 	echo "Pushing Utilities"
