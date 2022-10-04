@@ -14,13 +14,17 @@ then
 fi
 if [ $1 == $REPO ]
 then
+CURRHOMEPATH=`pwd`;
 cd
+cd FtcRobotCode-`date +%Y`-$VERSIONTAG
 
 cd ~/FtcRobotCode-`date +%Y`-$VERSIONTAG/FtcRobotController-$VERSIONTAG-$2/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
 
+echo "Commit Msg: "
 read commitMsg
 git commit -a -m "$commitMsg"
 git push origin main
+cd $CURRHOMEPATH;
 
-echo "Pushing Repo $2"
+echo "Pulled Repo $2"
 fi
