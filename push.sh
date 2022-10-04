@@ -10,7 +10,7 @@ if [ $1 == $UTIL ]
 then
 	echo "Pushing Utilities"
 	git commit -a -m "Utilities Pushed: `date +%m-%d-%Y-%M`"
-    git push origin main
+    git push origin master
 fi
 if [ $1 == $REPO ]
 then
