@@ -26,5 +26,5 @@ git commit -a -m "$commitMsg"
 git push origin main
 cd $CURRHOMEPATH;
 
-echo "Pulled Repo $2"
+echo "Pushed Repo $2"
 fi
