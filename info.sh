@@ -1,3 +1,5 @@
 #!/bin/bash
 
-start README.md
+NAME="-info"
+
+./Util.sh $NAME  $@

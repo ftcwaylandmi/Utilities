@@ -1,21 +1,5 @@
 #!/bin/bash
 
-VERSIONTAG=8.0;
+NAME="-pull"
 
-UTIL="-u"
-REPO="-r"
-
-if [ $1 == $UTIL ] 
-then
-	echo "Pulling Utilities"
-	git pull
-fi
-if [ $1 == $REPO ]
-then
-cd
-
-cd ~/FtcRobotCode-`date +%Y`-$VERSIONTAG/FtcRobotController-$VERSIONTAG-$2/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
-git pull
-
-echo "Pulled Repo $2"
-fi
+./Util.sh $NAME  $@ 
