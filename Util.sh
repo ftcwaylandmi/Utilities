@@ -107,6 +107,10 @@ case $2 in
                 echo $3 > files/Version.txt
             ;;
 
+            $INFO)
+                cat files/Version.txt
+            ;;
+
             *)
                 echo "[UTILITIES] {arg[1] error} : Blank, not a valid flag, or not a valid flag for arg[2]."
                 exit
