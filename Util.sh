@@ -5,11 +5,11 @@ VERSION=$(cat "files/Version.txt")
 # echo "$VERSION"
 
 # FLAGS $1
-START="-start"
-PUSH="-push"
-PULL="-pull"
-INFO="-info"
-UPDATE="-update"
+START="-s"
+PUSH="-ps"
+PULL="-pl"
+INFO="-i"
+UPDATE="-up"
 
 # FLAGS $2
 UTIL="-u" # Pulls or Pushes Utils
@@ -25,9 +25,23 @@ case $2 in
     $UTIL)
         case $1 in 
             $PUSH)
-                echo "Pushing Utilities"
-	            git commit -a -m "Utilities Pushed: `date +%m-%d-%Y-%M`"
-                git push origin master
+                echo "Do you have permission to push Utilities?" # This is so that Utilities won't be pushed without permission
+                read CHECK
+
+                case $CHECK in
+
+                    "Yes")
+                        echo "Pushing Utilities"
+                        git commit -a -m "Utilities Pushed: `date +%m-%d-%Y-%M`"
+                        git push origin master
+                    ;;
+
+                    *)
+                        echo "Utilities push revoked"
+                    ;;
+
+                esac
+
             ;;
 
             $PULL)

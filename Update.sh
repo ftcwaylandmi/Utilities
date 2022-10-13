@@ -1,5 +1,5 @@
 #!/bin/bash
 
-NAME="-update"
+NAME="-up"
 
 ./Util.sh $NAME  $@

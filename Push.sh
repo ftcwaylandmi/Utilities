@@ -1,5 +1,5 @@
 #!/bin/bash
 
-NAME="-push"
+NAME="-ps"
 
 ./Util.sh $NAME  $@

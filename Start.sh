@@ -1,5 +1,5 @@
 #!/bin/bash
 
-NAME="-start"
+NAME="-s"
 
 ./Util.sh $NAME  $@

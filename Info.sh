@@ -1,5 +1,5 @@
 #!/bin/bash
 
-NAME="-info"
+NAME="-i"
 
 ./Util.sh $NAME  $@

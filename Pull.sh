@@ -1,5 +1,5 @@
 #!/bin/bash
 
-NAME="-pull"
+NAME="-pl"
 
 ./Util.sh $NAME  $@ 
