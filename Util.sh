@@ -27,10 +27,11 @@ case $2 in
             $PUSH)
                 echo "Do you have permission to push Utilities?" # This is so that Utilities won't be pushed without permission
                 read CHECK
+                CHECK=$CHECK tr `[:lower:]`
 
                 case $CHECK in
 
-                    "Yes")
+                    "yes")
                         echo "Pushing Utilities"
                         git commit -a -m "Utilities Pushed: `date +%m-%d-%Y-%M`"
                         git push origin master
