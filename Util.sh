@@ -27,9 +27,9 @@ case $2 in
             $PUSH)
                 echo "Do you have permission to push Utilities?" # This is so that Utilities won't be pushed without permission
                 read CHECK
-                CHECK=$CHECK tr `[:lower:]`
+                LCHECK=$(echo $CHECK | tr '[:upper:]' '[:lower:]')
 
-                case $CHECK in
+                case $LCHECK in
 
                     "yes")
                         echo "Pushing Utilities"
